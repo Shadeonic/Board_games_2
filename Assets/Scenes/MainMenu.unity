@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: baef7505b9e48404cb74585601f49ff9, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 52fcefd712182d743a781fde12426775, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -869,6 +869,8 @@ GameObject:
   - component: {fileID: 255394765}
   - component: {fileID: 255394766}
   - component: {fileID: 255394767}
+  - component: {fileID: 255394768}
+  - component: {fileID: 255394769}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -977,6 +979,112 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveFileName: playerData.json
+--- !u!114 &255394768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255394761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9484da011cd5840b8a6a48f6409667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 398164158}
+  playlist:
+  - {fileID: 8300000, guid: 5b1ed8fbe89154eaf96723b6e5f0aad3, type: 3}
+  - {fileID: 8300000, guid: eb7f10105313640a18ce7926041a4d76, type: 3}
+  - {fileID: 8300000, guid: 458dd8822518c4f37bc3edba9b6c57d9, type: 3}
+  - {fileID: 8300000, guid: 3fc26869a512b4e5187c9be6310ad8c2, type: 3}
+  - {fileID: 8300000, guid: bea93a38b71b64b598109b3a3b1a0048, type: 3}
+--- !u!114 &255394769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255394761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fabc2ddbcca6d4ca2e03ba9913483d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playlist: {fileID: 255394768}
+  musicSource: {fileID: 398164158}
+  effectsSource: {fileID: 1314388316}
+  defaultMusicVolume: 0.3
+  defaultEffectsVolume: 0.3
+  defaultMusicTrack: 0
+--- !u!1 &256890920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256890921}
+  - component: {fileID: 256890922}
+  m_Layer: 5
+  m_Name: Clouds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &256890921
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256890920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &256890922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256890920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e007f0fb621346544a590a0f071fd459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudPrefabs:
+  - {fileID: 1077097944259319589, guid: 63aaac6ce6d507a4aa1fcebd0db8caec, type: 3}
+  - {fileID: 8496522115918151818, guid: 942558bbc0ea8bc4cbbf85bd2d7464bc, type: 3}
+  - {fileID: 4639065414747354127, guid: f724a9924d1836740926eb3f2004008b, type: 3}
+  - {fileID: 6096632076376686336, guid: 76590bee79fceb446a50a1b89e87ba23, type: 3}
+  - {fileID: 5558752674934736177, guid: b0bc77432bdd6bb4c9e7f6d0d9b808aa, type: 3}
+  cloudCount: 10
+  direction: 1
+  minSpeed: 0.3
+  maxSpeed: 1
+  bobAmount: 0.05
+  bobSpeed: 0.5
+  minScale: 0.1
+  maxScale: 0.2
+  fadeDistantClouds: 1
+  minHeight: 0
+  maxHeight: 1
+  edgePadding: 2
+  startOffScreen: 1
+  sortingLayer: Default
+  sortingOrder: -100
 --- !u!1 &263354940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1221,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -4888,7 +4996,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7773,6 +7881,7 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 255394763}
+  - {fileID: 256890921}
   - {fileID: 1749787125}
   - {fileID: 1016684367}
   - {fileID: 398164159}
