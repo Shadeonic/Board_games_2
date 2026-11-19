@@ -40,6 +40,11 @@ public class SceneChangerScript : MonoBehaviour
             yield return fadeScript.FadeOut(0.1f);
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
+        else if (string.Equals(action, "leaderboard", StringComparison.OrdinalIgnoreCase))
+        {
+            yield return fadeScript.FadeOut(0.1f);
+            SceneManager.LoadScene(3, LoadSceneMode.Single);
+        }
     }
 
     public void ToMainMenu()
@@ -50,6 +55,11 @@ public class SceneChangerScript : MonoBehaviour
     public void ToSettings()
     {
         StartCoroutine(Delay("settings", -1, "", -1));
+    }
+
+    public void ToLeaderboard()
+    {
+        StartCoroutine(Delay("leaderboard", -1, "", -1));
     }
 }
 
