@@ -540,6 +540,7 @@ GameObject:
   - component: {fileID: 660469580}
   - component: {fileID: 660469582}
   - component: {fileID: 660469583}
+  - component: {fileID: 660469584}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -621,6 +622,27 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9d0113dd16699ce4ea3c58dd422fdc1f, type: 3}
   - {fileID: 8300000, guid: ddd16025d5ef32249bf91ac485f99fd8, type: 3}
   effectsSource: {fileID: 1436509701}
+--- !u!114 &660469584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660469578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bfbf5fcceae99448c1968f2534cca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefabs:
+  - {fileID: 4996843249703022582, guid: f4347c9920265424e9cb615b694b2a95, type: 3}
+  - {fileID: 1755467508398997841, guid: 2ef2d4abd6c2220439369f1da3739b46, type: 3}
+  - {fileID: 9043010068595204777, guid: a761f4937e4508b40a6fbb23c04120a0, type: 3}
+  - {fileID: 8257935303023968958, guid: 0bb4e6fbcaeb7a94c823b32633f2671f, type: 3}
+  - {fileID: 7626010416012801685, guid: f2c967dc676d36840be920b82a1c0648, type: 3}
+  - {fileID: 1060955773910337442, guid: 00885189222e9604d9b43b26a529a13f, type: 3}
+  - {fileID: 1016127327368511641, guid: dc6a7e31db0d02d4cb8ff6442cd46a73, type: 3}
+  spawnPoint: {fileID: 1327328072}
 --- !u!1 &950911232
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,7 +939,7 @@ Transform:
   m_GameObject: {fileID: 1327328072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.14, y: 0.35, z: 4.468}
+  m_LocalPosition: {x: 4.14, y: 0.8, z: 4.468}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
